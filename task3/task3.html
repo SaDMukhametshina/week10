@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    h1 {
+        height: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9vw;
+        font-weight: 200;
+        color: aliceblue;
+    }
+
+    .buttons {
+        height: 25vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    button {
+        width: 20vw;
+        height: 5vw;
+        background-color: black;
+        border-color: rgba(44, 105, 209, 0.571);
+        color: aliceblue;
+        font-size: 3vw;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <h1>My favorite cars</h1>
+    <div class="img"><img id="image" src="./assets/27db59df6af53332af074029e3293fe0.jpg" alt="car1"></div>
+    <div class="buttons">
+        <button onClick="document.getElementById('image').src='./assets/27db59df6af53332af074029e3293fe0.jpg'"
+            class="buttonprevious">previous</button>
+        <button onClick="document.getElementById('image').src='./assets/ae6154154cad25b5136f620ada9c6ac4.jpg'"
+            id="buttonnext">next</button>
+    </div>
+
+</body>
+
+</html>
